@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea570d3b1d0457d42a38ac160f7d6434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minigameManager: {fileID: 0}
   myMaterial: {fileID: 720663148}
 --- !u!64 &720663152
 MeshCollider:
@@ -567,7 +568,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8ff4ec73815d684d8735dfa938845a5, type: 2}
+  - {fileID: 2100000, guid: 624ca0fd4738c6a409b00cb3e6d67884, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -606,7 +607,7 @@ Transform:
   m_GameObject: {fileID: 1379363512}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.2228, y: -0.618, z: 7.35}
+  m_LocalPosition: {x: -6, y: -0.618, z: 7.35}
   m_LocalScale: {x: 6.455227, y: 3.635247, z: 3.7984343}
   m_ConstrainProportionsScale: 0
   m_Children: []
