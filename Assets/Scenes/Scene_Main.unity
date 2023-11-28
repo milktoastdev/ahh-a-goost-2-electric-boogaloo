@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b1f84acac6d1ee41b57796e86d37175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1644803872}
   squarePrefab: {fileID: 1759835481572558192, guid: 8c1dd92b2b59eff4aad467cf71cfe0dc, type: 3}
   roundPrefab: {fileID: 5432622629558044223, guid: 278dada77ced6af41ae7c84f641ad131, type: 3}
   trianglePrefab: {fileID: 3112769114127030366, guid: 871737ea6518f7e49a2b89bc6f89a230, type: 3}
@@ -3699,7 +3699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fc41c74b613b24e9f97efaddc49dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1644803872}
   cupboards:
   - {fileID: 1234642672}
   - {fileID: 480088183}
