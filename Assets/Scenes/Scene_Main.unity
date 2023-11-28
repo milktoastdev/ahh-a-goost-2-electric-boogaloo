@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea570d3b1d0457d42a38ac160f7d6434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minigameManager: {fileID: 0}
+  _minigameManager: {fileID: 272787690}
   myMaterial: {fileID: 504952917}
 --- !u!23 &504952917
 MeshRenderer:
