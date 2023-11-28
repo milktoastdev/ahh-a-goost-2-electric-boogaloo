@@ -632,7 +632,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8ff4ec73815d684d8735dfa938845a5, type: 2}
+  - {fileID: 2100000, guid: 059e4c0b56dec854a996a3b850cbd23a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,6 +763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minigameManager: {fileID: 0}
+  _uiManager: {fileID: 0}
+  _remainingLives: 0
 --- !u!4 &902578528
 Transform:
   m_ObjectHideFlags: 0
@@ -793,6 +795,12 @@ MonoBehaviour:
   _gameManager: {fileID: 902578526}
   _minigameManager: {fileID: 902578526}
   _sceneManager: {fileID: 902578526}
+  _quitButton: {fileID: 0}
+  _returnButton: {fileID: 0}
+  _continueButton: {fileID: 0}
+  _winGameImage: {fileID: 0}
+  _loseGameImage: {fileID: 0}
+  _loseLifeImage: {fileID: 0}
   _timerTMP: {fileID: 4705224097471123567, guid: 3ac459e87ab8b9e438198d81017ad324, type: 3}
   _countDown: {fileID: 0}
 --- !u!114 &902578530
@@ -809,6 +817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 902578526}
   _minigameManager: {fileID: 0}
+  _nextSceneName: Main
+  _nextSceneType: Menu
 --- !u!114 &902578531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,6 +832,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 902578526}
+  _uiManager: {fileID: 0}
+  _sceneManager: {fileID: 0}
+  _currentMinigame: 0
   _isMinigameRunning: 0
   _minigamesList:
   - Cupboards
@@ -830,6 +843,7 @@ MonoBehaviour:
   - Posession
   - Difference
   - Gooing
+  _minigamesRemaining: []
 --- !u!1 &1434456333
 GameObject:
   m_ObjectHideFlags: 0
