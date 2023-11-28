@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8608441437794117714}
   m_Layer: 0
   m_Name: RoundItem_P
-  m_TagString: Untagged
+  m_TagString: New Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
