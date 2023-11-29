@@ -7,7 +7,7 @@ public class Script_MinigameManager : MonoBehaviour
     // DO NOT DELETE -------------------------------------------------------
     public GameObject _gameManager;
     public GameObject _uiManager;
-    public GameObject _sceneManager;
+    public GameObject _cameraManager;
     // ---------------------------------------------------------------------
     
     public int _currentMinigame;

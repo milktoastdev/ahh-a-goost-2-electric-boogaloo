@@ -1,24 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Script_SceneManager : MonoBehaviour
+public class Script_CameraManager : MonoBehaviour
 {
     public GameObject _gameManager;
     public GameObject _minigameManager;
     
+    
+    
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    // OLD SCENE MANAGEMENT STUFF
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     // All scenes in the order they appear in the build settings
-    private List<string> _sceneIndexList = new List<string> {"Main","Credits","Capture","Posession","Cupboards","Difference","Cleaning","Gooing"};
+    // private List<string> _sceneIndexList = new List<string> {"Main","Credits","Capture","Posession","Cupboards","Difference","Cleaning","Gooing"};
 
     // Defaults to the main menu just in case
     //private int _currentSceneIndex = 0;
-    private int _nextSceneIndex = 0;
-    public string _nextSceneName = "Main";
-    public string _nextSceneType = "Menu";
+    // private int _nextSceneIndex = 0;
+    // public string _nextSceneName = "Main";
+    // public string _nextSceneType = "Menu";
 
     // Sets the next name of the scene to be loaded
-    private void SetNextName()
+    /* private void SetNextName()
     {
         _nextSceneName = _minigameManager.GetComponent<Script_MinigameManager>()._minigamesRemaining[_minigameManager.GetComponent<Script_MinigameManager>()._currentMinigame];
         // Debug.Log($"Name of next scene to be loaded : {_nextSceneName}");
@@ -64,7 +68,7 @@ public class Script_SceneManager : MonoBehaviour
         // Debug.Log("Load Scene Async function executed successfully");
         
         yield return null;
-    }
+    }*/
     
     /* Async function removes the need for this
     // Retrieves the name of the active scene

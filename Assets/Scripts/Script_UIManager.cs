@@ -8,7 +8,7 @@ public class Script_UIManager : MonoBehaviour
 {
     public GameObject _gameManager;
     public GameObject _minigameManager;
-    public GameObject _sceneManager;
+    public GameObject _cameraManager;
        
     public GameObject _quitButton;
     public GameObject _returnButton;
@@ -43,9 +43,6 @@ public class Script_UIManager : MonoBehaviour
     public void TitleButton()
     {
         // Debug.Log("Title button pressed");
-        _sceneManager.GetComponent<Script_SceneManager>()._nextSceneType = "Menu";
-        _sceneManager.GetComponent<Script_SceneManager>()._nextSceneName = "Main";
-        _sceneManager.GetComponent<Script_SceneManager>().PlsLoadSceneAsync();
         // Debug.Log("Title button executed successfully");
     }
     
@@ -66,9 +63,6 @@ public class Script_UIManager : MonoBehaviour
     public void CreditsButton()
     {
         // Debug.Log("Credits button pressed");
-        _sceneManager.GetComponent<Script_SceneManager>()._nextSceneType = "Menu";
-        _sceneManager.GetComponent<Script_SceneManager>()._nextSceneName = "Credits";
-        _sceneManager.GetComponent<Script_SceneManager>().PlsLoadSceneAsync();
         // Debug.Log("Credits button executed successfully");
     }
 
