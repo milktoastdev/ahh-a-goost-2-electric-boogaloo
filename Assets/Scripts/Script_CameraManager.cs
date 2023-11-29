@@ -7,7 +7,33 @@ public class Script_CameraManager : MonoBehaviour
     public GameObject _gameManager;
     public GameObject _minigameManager;
     
-    
+    // Current positions of camera
+    private float camera_currentPosx = 0.0f;
+    private float camera_currentPosy = 0.0f;
+    private float camera_currentPosz =0.0f;
+
+    // Next positions of camera
+    private float camera_nextPosx;
+    private float camera_nextPosy;
+    private float camera_nextPosz;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        // Moves camera to default position if required
+    }
+
+    // Retreives the information for the required position of the camera based on the next minigame
+    private void SetNextCameraPosition()
+    {
+
+    }
+
+    // Responsible for moving the camera's position
+    private void MoveCamera()
+    {
+
+    }
     
     // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
     // OLD SCENE MANAGEMENT STUFF
