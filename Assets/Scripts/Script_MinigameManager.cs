@@ -9,6 +9,14 @@ public class Script_MinigameManager : MonoBehaviour
     public GameObject _uiManager;
     public GameObject _cameraManager;
     // ---------------------------------------------------------------------
+    //Declaration for minigame managers in order to call upon them when needed
+    public GameObject _posessionManager;
+    public GameObject _captureManager;
+    public GameObject _differenceManager;
+    public GameObject _cupboardsManager;
+    public GameObject _gooManager;
+    public GameObject _cleaningManager;
+
     
     public int _currentMinigame;
     int _maximumMinigames = 6;
@@ -32,13 +40,14 @@ public class Script_MinigameManager : MonoBehaviour
         Debug.Log("Next minigame called!");
         
         int _thisMinigame = -1;
-        
+        _cameraManager.GetComponent<Script_CameraManager>().MoveCamera();
         for(int i = 0; i < _maximumMinigames; i++)
         {
             _thisMinigame = Random.Range(0,_minigamesRemaining.Count);
 
             _currentMinigame = _thisMinigame;          
         }
+        
     } 
 
     // Called by the minigame itself when the game is won

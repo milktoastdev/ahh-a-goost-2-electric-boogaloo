@@ -9,6 +9,8 @@ public class Script_UIManager : MonoBehaviour
     public GameObject _gameManager;
     public GameObject _minigameManager;
     public GameObject _cameraManager;
+    public GameObject _titleScreen;
+
        
     public GameObject _quitButton;
     public GameObject _returnButton;
@@ -37,6 +39,8 @@ public class Script_UIManager : MonoBehaviour
         // Debug.Log("Start button pressed");
         _gameManager.GetComponent<Script_GameManager>().StartGame();
         // Debug.Log("Start button exectued succesfully");
+        _titleScreen.SetActive(false);
+        
     }
 
     // Calls the return to start scene function in the Scene Manager
