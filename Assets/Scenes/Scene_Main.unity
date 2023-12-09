@@ -307,7 +307,6 @@ GameObject:
   - component: {fileID: 103397979}
   - component: {fileID: 103397978}
   - component: {fileID: 103397977}
-  - component: {fileID: 103397976}
   m_Layer: 0
   m_Name: Plane_Book
   m_TagString: Untagged
@@ -330,18 +329,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1477365087}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &103397976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103397974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eabf1d3b68208e41af97eafdf09651d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &103397977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -365,9 +352,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 126
   m_CollisionDetection: 1
 --- !u!65 &103397978
 BoxCollider:
@@ -632,7 +619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &123393223
 Transform:
   m_ObjectHideFlags: 0
@@ -1859,7 +1846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804a5f25ede5e70438f4b8ed9dae57b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 1644803872}
+  _minigameManager: {fileID: 272787690}
   _theLamp: {fileID: 1904754403}
   _theBook: {fileID: 103397974}
   _thePainting: {fileID: 898318440}
@@ -2095,7 +2082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753467728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2274,7 +2261,6 @@ GameObject:
   - component: {fileID: 898318445}
   - component: {fileID: 898318444}
   - component: {fileID: 898318443}
-  - component: {fileID: 898318442}
   m_Layer: 0
   m_Name: Plane_Painting
   m_TagString: Untagged
@@ -2297,18 +2283,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1477365087}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &898318442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898318440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eabf1d3b68208e41af97eafdf09651d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &898318443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2332,10 +2306,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!65 &898318444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2599,7 +2573,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -79.7, y: 61, z: -17.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2655,7 +2629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1074705206
 Transform:
   m_ObjectHideFlags: 0
@@ -4193,7 +4167,6 @@ GameObject:
   - component: {fileID: 1904754408}
   - component: {fileID: 1904754407}
   - component: {fileID: 1904754406}
-  - component: {fileID: 1904754405}
   m_Layer: 0
   m_Name: Plane_Lamp
   m_TagString: Untagged
@@ -4216,18 +4189,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1477365087}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &1904754405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904754403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eabf1d3b68208e41af97eafdf09651d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1904754406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4251,10 +4212,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!65 &1904754407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4409,7 +4370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1945931553
 Transform:
   m_ObjectHideFlags: 0
@@ -4602,7 +4563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2048469770
 Transform:
   m_ObjectHideFlags: 0
@@ -4824,7 +4785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2129448581
 Transform:
   m_ObjectHideFlags: 0
