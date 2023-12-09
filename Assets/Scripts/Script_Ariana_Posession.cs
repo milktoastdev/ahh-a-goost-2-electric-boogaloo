@@ -56,8 +56,8 @@ public class Script_Ariana_Posession : MonoBehaviour
         }
 
         // This makes sure the world won't explode :)
-        while(_canIWhileLoopPlease == true)
-        {
+        //while(_canIWhileLoopPlease == true)
+        //{
             // Wiggle wiggle yeah
             ShakeThatShit();
 
@@ -96,21 +96,17 @@ public class Script_Ariana_Posession : MonoBehaviour
                     }
                 }
             }
-        }
+        //}
     }
 
     // Picks which item to posess.
-    public GameObject PickItem()
+    public void PickItem()
     {
         _posessedItem = _itemsToPosess[Random.Range(0,_itemsToPosess.Count)];
-        Debug.Log("Slimon has chosen.");
+        //Debug.Log("Slimon has chosen.");
         
         // Adds tag checked in raycasting
         _posessedItem.tag = "Posessed";
-
-        _canIWhileLoopPlease = true;
-        
-        return _posessedItem;   
     }
 
     // Initiates the posessed item and makes it move.
