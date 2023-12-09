@@ -21,9 +21,9 @@ public class Script_CameraManager : MonoBehaviour
     private float camera_nextPosz;
     //This list is for the positions of each minigame
      private int _minigameCount = 0;
-    public List<float> _minigamePositionsX = new List<float>(){-119.9f, -127.4f};
-    public List<float> _minigamePositionsY= new List<float>(){90.4f, 58.6f};
-    public List<float> _minigamePositionsZ = new List<float>(){-12.5f, -8.4f};
+    public List<float> _minigamePositionsX = new List<float>(){-119.9f, -127.4f, -79.17f, -40.6f, -82.95f, -42.3f, -180.02f, -79f};
+    public List<float> _minigamePositionsY= new List<float>(){90.4f, 58.6f, 61f, 61f, 89.8f, 89.61f, 90.72f, 403f};
+    public List<float> _minigamePositionsZ = new List<float>(){-12.5f, -8.4f, -17.3f, -17.3f, -10f, -10f, -8.9f, -18.73f};
     
 
     // Start is called before the first frame update
