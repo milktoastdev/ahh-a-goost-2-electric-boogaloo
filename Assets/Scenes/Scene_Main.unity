@@ -183,7 +183,7 @@ MonoBehaviour:
   m_text: PRESS ESC TO RETURN TO TITLE SCREEN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -849,12 +849,17 @@ MonoBehaviour:
   _gameManager: {fileID: 1644803872}
   _uiManager: {fileID: 1287574126}
   _cameraManager: {fileID: 1609830293}
-  _posessionManager: {fileID: 0}
-  _captureManager: {fileID: 0}
-  _differenceManager: {fileID: 0}
-  _cupboardsManager: {fileID: 0}
-  _gooManager: {fileID: 0}
-  _cleaningManager: {fileID: 0}
+  _minigameManagers:
+  - {fileID: 2129448580}
+  - {fileID: 2048469769}
+  - {fileID: 1477365086}
+  - {fileID: 1074705205}
+  - {fileID: 123393222}
+  - {fileID: 1945931552}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _minigamePlaying: 0
   _currentMinigame: 0
   _isMinigameRunning: 0
   _minigamesList:
@@ -944,7 +949,7 @@ MonoBehaviour:
     design : ana nguyen (nymrahne)\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2498,7 +2503,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3774,9 +3779,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 1644803872}
   _minigameManager: {fileID: 272787690}
-  _minigamePositions:
-  - {x: -119.9, y: 90.4, z: -12.5}
-  - {x: -127.4, y: 58.6, z: -8.4}
+  _minigamePositionsX:
+  - -119.9
+  - -127.4
+  _minigamePositionsY:
+  - 90.4
+  - 58.6
+  _minigamePositionsZ:
+  - -12.5
+  - -8.4
 --- !u!4 &1609830295
 Transform:
   m_ObjectHideFlags: 0

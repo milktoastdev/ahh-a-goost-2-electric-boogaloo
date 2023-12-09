@@ -16,12 +16,14 @@ public class Script_CameraManager : MonoBehaviour
     private float camera_currentPosz =0.0f;
 
     // Next positions of camera
-    private Vector3 camera_nextPosx;
+    private float camera_nextPosx;
     private float camera_nextPosy;
     private float camera_nextPosz;
     //This list is for the positions of each minigame
      private int _minigameCount = 0;
-    public List<Vector3> _minigamePositions = new List<Vector3>(){new Vector3(-119.9f, 90.4f, -12.5f), new Vector3(-127.4f,58.6f,-8.4f)};
+    public List<float> _minigamePositionsX = new List<float>(){-119.9f, -127.4f};
+    public List<float> _minigamePositionsY= new List<float>(){90.4f, 58.6f};
+    public List<float> _minigamePositionsZ = new List<float>(){-12.5f, -8.4f};
     
 
     // Start is called before the first frame update
@@ -36,14 +38,16 @@ public class Script_CameraManager : MonoBehaviour
     private void SetNextCameraPosition()
     {
 
-        for(int i = 0; i < _minigamePositions.Count; i++ )
+        for(int i = 0; i < _minigamePositionsX.Count; i++ )
         {
             if(_minigameCount < 8)
             {
-                camera_nextPosx = _minigamePositions[_minigameCount];
+                camera_nextPosx = _minigamePositionsX[_minigameCount];
+                camera_nextPosy = _minigamePositionsY[_minigameCount];
+                camera_nextPosz = _minigamePositionsZ[_minigameCount];
                 //This counts through the list of minigames each time the function is
-                _minigameCount =+ 1;
-                Debug.Log($"this fired and the minigame counter is now {_minigameCount} camera position is {camera_nextPosx}");
+                //_minigameCount =+ 1;
+                Debug.Log($"this fired and the minigame counter is now {_minigameCount} camera position is {camera_nextPosx},{camera_nextPosy},{camera_nextPosz}");
             }    
 
         }
@@ -53,8 +57,12 @@ public class Script_CameraManager : MonoBehaviour
     // Responsible for moving the camera's position
     public void MoveCamera()
     {
-        _cam.transform.position = camera_nextPosx;
+        //This grabs the next minigame positions 
         SetNextCameraPosition();
+        //After it grabbed the coords it'll move to the position
+        _cam.transform.position = new Vector3(camera_nextPosx,camera_nextPosy,camera_nextPosz);
+        //this then counts up to the next minigame 
+        _minigameCount =+ 1;
 
     }
     
