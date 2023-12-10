@@ -26,29 +26,29 @@ public class Script_Ariana_Posession : MonoBehaviour
     // OnEnable is called on the enable of the object its attached to. I think. Also, it's called before start.
     void OnEnable()
     {
-        Debug.Log("Starting posession...");
+        //Debug.Log("Starting posession...");
         PosessionStart();
-        Debug.Log("Posession successfully started.");
+        //Debug.Log("Posession successfully started.");
     }
 
     // Initiates the posessed item and makes it move.
     void PosessionStart()
     {
-        Debug.Log("Resetting timer...");
+        //Debug.Log("Resetting timer...");
         //_minigameManager.GetComponent<Script_UIManager>().TimerReset();
-        Debug.Log("Timer reset.");
+        //Debug.Log("Timer reset.");
 
         //_minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning = true;
-        Debug.Log("Minigame is running");
+        //Debug.Log("Minigame is running");
 
         // Allows the while loop within the coroutine to run
         _canIWhileLoopPlease = true;
-        Debug.Log("We're in delicate territory rn");
+        //Debug.Log("We're in delicate territory rn");
 
         // I tried to call ShakeThatShit() as a normal function last night. Lol.
-        Debug.Log("Initiating wiggling coroutine...");
+        //Debug.Log("Initiating wiggling coroutine...");
         StartCoroutine(ShakeThatShit());
-        Debug.Log("Wiggling coroutine initiated.");
+        //Debug.Log("Wiggling coroutine initiated.");
     }
     
     // Makes the posessed item wiggle
@@ -56,9 +56,9 @@ public class Script_Ariana_Posession : MonoBehaviour
     {
         while(_canIWhileLoopPlease == true)
         { 
-            Debug.Log("Picking item...");
+            //Debug.Log("Picking item...");
             PickItem();
-            Debug.Log("Item picked!");
+            //Debug.Log("Item picked!");
 
             // Different duration of wiggle generated each time
             float durationOfWiggle = Random.Range(0.5f,2.0f);
