@@ -23,53 +23,54 @@ public class Script_Ariana_Capture : MonoBehaviour
     void OnEnable()
     {
         // Help I'm delusional
-        Debug.Log("Yarghhhh I be awakened matey");
+        //Debug.Log("Yarghhhh I be awakened matey");
         
         // Adds each button to the dictionary in order I can't believe this isn't throwing errors oh my fucking god
-        Debug.Log("Executing dictionary for loop...");
-        for(int i = -1; i < _captureButtons.Count; i++)
+        //Debug.Log("Executing dictionary for loop...");
+        for(int i = 0; i < _captureButtons.Count; i++)
         {
             // int i ends up being the same as the index of the buttons in the list. I think. Coding math is hard.
-            Debug.Log($"Adding {_captureButtons[i]} key to dictionary with a value of {i}..."); 
+            //Debug.Log($"Adding {_captureButtons[i]} key to dictionary with a value of {i}..."); 
             _buttonIndexDictionary.Add(_captureButtons[i],i);
-            Debug.Log($"Added {_captureButtons[i]} key to dictionary with a value of {i}.");
+            //Debug.Log($"Added {_captureButtons[i]} key to dictionary with a value of {i}.");
             // The fact that this is throwing no compile errors is astounding honestly
         }
-        Debug.Log("Dictionary for loop executed.");
+        //Debug.Log("Dictionary for loop executed.");
                 
         // Starts the internal game loop
-        Debug.Log("Calling internal game loop...");
+        //Debug.Log("Calling internal game loop...");
         CaptureStart();
-        Debug.Log("Internal game loop called.");
+        //Debug.Log("Internal game loop called.");
 
         // Sorry
-        Debug.Log("Ready to sail the high seas me matey yarghhhh");
+        //Debug.Log("Ready to sail the high seas me matey yarghhhh");
     }
 
     // Starts the dang thang. You can't play a game you ain't started
     void CaptureStart()
     {
         // Resets the countdown and should instantiate it to the canvas
-        Debug.Log("Resetting timer...");
+        //Debug.Log("Resetting timer...");
         _UIManager.GetComponent<Script_UIManager>().TimerReset();
-        Debug.Log("Timer is reset.");
+        //Debug.Log("Timer is reset.");
 
         // Running the minigame manager from the backend so it can do its fancy shiz
-        Debug.Log("Running minigame...");
+        //Debug.Log("Running minigame...");
         _minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning = true;
-        Debug.Log("Minigame is running.");
+        //Debug.Log("Minigame is running.");
 
         // Can't play a button game without clicking buttons (the correct ones, specifically)
-        Debug.Log("Starting button order coroutine...");
-        Debug.Log("Button order coroutine started.");
+        //Debug.Log("Starting button order coroutine...");
+        StartCoroutine(ButtonOrder());
+        //Debug.Log("Button order coroutine started.");
     }
     
     // Assigns the button the player pressed a variable to be able to be checked in the coroutine
-    int WhatButtonAmI(int myButtonIndex)
+    string WhatButtonAmI(string myName)
     {
+        //myName = GameObject.name;
         
-        
-        return myButtonIndex;
+        return myName;
     }
     
     IEnumerator ButtonOrder()
@@ -77,7 +78,7 @@ public class Script_Ariana_Capture : MonoBehaviour
         // While the game is running... (so you can't keep playing during a win or fail state)
         while(_minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning == true)
         {
-            
+            //if(_buttonIndexDictionary[myName].Value = )
         } 
 
         // I don't need this to wait for any amount of time before running again
