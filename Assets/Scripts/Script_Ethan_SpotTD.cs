@@ -77,7 +77,7 @@ public class Script_Ethan_SpotTD : MonoBehaviour
 //------------------------------------------------------------------------------------------------------
     void SpawnScreenCover()
     {
-        screenCover_P = Instantiate(screenCover_P, new Vector3(0.0f,1.0f,-9.0f), Quaternion.identity);
+        screenCover_P = Instantiate(screenCover_P, new Vector3(-82.54243f,89.55885f,-9.5f), Quaternion.identity);
 
         //screenCover_P.transform.Rotate(90f,180f,0f);
 
@@ -119,20 +119,20 @@ public class Script_Ethan_SpotTD : MonoBehaviour
 //------------------------------------------------------------------------------------------------------------------------
     void SpawnRoundItem()
     {
-       newPrefab = Instantiate(roundPrefab, new Vector3(-1.427192f, -1.836136f, -1.1f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
+       newPrefab = Instantiate(roundPrefab, new Vector3(-84.14f,87.47f, -1.1f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
        newPrefab.tag = "New Item";
         
     }
 
     void SpawnSquareItem()
     {
-       newPrefab = Instantiate(squarePrefab, new Vector3(3.76f, 0.248966f, -1.37f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
+       newPrefab = Instantiate(squarePrefab, new Vector3(-79.03f, 89.17579f, -0.7f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
        newPrefab.tag = "New Item";
     }
 
     void SpawnTriangleItem()
     {
-        newPrefab = Instantiate(trianglePrefab, new Vector3(-0.63f, -1.94f, -1.03f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
+        newPrefab = Instantiate(trianglePrefab, new Vector3(-83.59f, 87.33f, -0.76f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
         newPrefab.tag = "New Item";
     }
 
