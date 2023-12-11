@@ -1835,19 +1835,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 544084626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 804a5f25ede5e70438f4b8ed9dae57b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8394d31686f8d024aa303a81ad33049c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _minigameManager: {fileID: 272787690}
   _UIManager: {fileID: 1287574126}
-  _theLamp: {fileID: 1904754403}
-  _theBook: {fileID: 103397974}
-  _thePainting: {fileID: 898318440}
-  _posessedItem: {fileID: 0}
-  _itemsToPosess:
-  - {fileID: 1904754403}
-  - {fileID: 103397974}
-  - {fileID: 898318440}
+  _captureButtons: []
 --- !u!1 &548056476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,7 +2149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minigameManager: {fileID: 272787690}
-  _UIManager: {fileID: 0}
+  _UIManager: {fileID: 1287574126}
   _theLamp: {fileID: 1904754403}
   _theBook: {fileID: 103397974}
   _thePainting: {fileID: 898318440}
@@ -3233,9 +3226,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 544084627}
   - {fileID: 1542077956}
   - {fileID: 482388928}
-  - {fileID: 544084627}
   m_Father: {fileID: 85866901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1091010144
