@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Script_Ariana_Posession : MonoBehaviour
 {
-    // DO NOT DELETE -------------------------------------------------------
+    // The managers
     public GameObject _minigameManager;
-    // ---------------------------------------------------------------------
+    public GameObject _UIManager;
     
+    // The posessable objects, and the posessed one.
     public GameObject _theLamp;
     public GameObject _theBook;
     public GameObject _thePainting;
     public GameObject _posessedItem;
+    
     // Can only have each object posessed once
     private int _objectsRemaing = 3;
 
@@ -34,12 +36,12 @@ public class Script_Ariana_Posession : MonoBehaviour
     // Initiates the posessed item and makes it move.
     void PosessionStart()
     {
-        //Debug.Log("Resetting timer...");
-        //_minigameManager.GetComponent<Script_UIManager>().TimerReset();
-        //Debug.Log("Timer reset.");
+        Debug.Log("Resetting timer...");
+        _UIManager.GetComponent<Script_UIManager>().TimerReset();
+        Debug.Log("Timer reset.");
 
-        //_minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning = true;
-        //Debug.Log("Minigame is running");
+        _minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning = true;
+        Debug.Log("Minigame is running");
 
         // Allows the while loop within the coroutine to run
         _canIWhileLoopPlease = true;
@@ -147,7 +149,7 @@ public class Script_Ariana_Posession : MonoBehaviour
         }
     }
 
-    // Player wins minigame
+    // Called when the minigame is won
     void PosessionWin()
     {
         Debug.Log("Local win function called");
@@ -155,7 +157,7 @@ public class Script_Ariana_Posession : MonoBehaviour
         Debug.Log("Remote win function called");
     }
 
-    // Player fails minigame
+    // Called when the minigame is lost
     void PosessionFail()
     {
         Debug.Log("Local lose function called");
