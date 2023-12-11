@@ -1840,7 +1840,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minigameManager: {fileID: 272787690}
   _UIManager: {fileID: 1287574126}
-  _captureButtons: []
+  _captureButtons:
+  - {fileID: 964408937}
+  - {fileID: 520339780}
+  - {fileID: 1011739296}
 --- !u!1 &548056476
 GameObject:
   m_ObjectHideFlags: 0
