@@ -39,7 +39,7 @@ public class Script_Ariana_Capture : MonoBehaviour
 
         // Can't play a button game without clicking buttons (the correct ones, specifically)
         Debug.Log("Starting button order coroutine...");
-        StartCoroutine(ButtonOrder);
+        StartCoroutine(ButtonOrder());
         Debug.Log("Button order coroutine started.");
     }
     
