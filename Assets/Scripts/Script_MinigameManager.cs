@@ -43,7 +43,7 @@ public class Script_MinigameManager : MonoBehaviour
         }
         MinigameActiviation();
         _minigamePlaying =+ 1;
-        
+        _uiManager.GetComponent<Script_UIManager>().DisplayTimer();
     } 
 
     // Called by the minigame itself when the game is won
