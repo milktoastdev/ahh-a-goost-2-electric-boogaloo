@@ -9,9 +9,11 @@ public class Script_MinigameManager : MonoBehaviour
     public GameObject _uiManager;
     public GameObject _cameraManager;
     // ---------------------------------------------------------------------
-    
+    //Declaration for minigame managers in order to call upon them when needed
+    public List<GameObject> _minigameManagers = new List<GameObject>(){};
+    public int _minigamePlaying = 0;
     public int _currentMinigame;
-    int _maximumMinigames = 6;
+    int _maximumMinigames = 9;
     public bool _isMinigameRunning = false;
     
     // All minigames overall. This list should not change so it can reset the other lists for new players.
@@ -32,13 +34,16 @@ public class Script_MinigameManager : MonoBehaviour
         Debug.Log("Next minigame called!");
         
         int _thisMinigame = -1;
-        
+        _cameraManager.GetComponent<Script_CameraManager>().MoveCamera();
         for(int i = 0; i < _maximumMinigames; i++)
         {
             _thisMinigame = Random.Range(0,_minigamesRemaining.Count);
 
             _currentMinigame = _thisMinigame;          
         }
+        MinigameActiviation();
+        _minigamePlaying =+ 1;
+        _uiManager.GetComponent<Script_UIManager>().DisplayTimer();
     } 
 
     // Called by the minigame itself when the game is won
@@ -113,5 +118,12 @@ public class Script_MinigameManager : MonoBehaviour
         // Debug.Log("Lists cleared");
 
         // Debug.Log("Game reset successfully");
+    }
+
+    void MinigameActiviation()
+    {
+        //this activates the minigames through a list, will cycle through minigames
+        //will have to deactivate minigames through internal scripts
+        _minigameManagers[_minigamePlaying].SetActive(true);
     }
 }

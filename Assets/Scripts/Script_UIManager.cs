@@ -9,6 +9,10 @@ public class Script_UIManager : MonoBehaviour
     public GameObject _gameManager;
     public GameObject _minigameManager;
     public GameObject _cameraManager;
+    public GameObject _titleScreen;
+    public GameObject _pauseScreen;
+    public GameObject _creditScreen;
+
        
     public GameObject _quitButton;
     public GameObject _returnButton;
@@ -37,13 +41,17 @@ public class Script_UIManager : MonoBehaviour
         // Debug.Log("Start button pressed");
         _gameManager.GetComponent<Script_GameManager>().StartGame();
         // Debug.Log("Start button exectued succesfully");
+        _titleScreen.SetActive(false);
+        
     }
 
     // Calls the return to start scene function in the Scene Manager
-    public void TitleButton()
+    public void PauseScreen()
     {
-        // Debug.Log("Title button pressed");
-        // Debug.Log("Title button executed successfully");
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            _pauseScreen.SetActive(true);
+        }
     }
     
     public void DisplayTitleButton()
@@ -63,6 +71,7 @@ public class Script_UIManager : MonoBehaviour
     public void CreditsButton()
     {
         // Debug.Log("Credits button pressed");
+        _creditScreen.SetActive(true);
         // Debug.Log("Credits button executed successfully");
     }
 
@@ -99,7 +108,7 @@ public class Script_UIManager : MonoBehaviour
     }
 
     // Instantiates the timer prefab and displays it on the Canvas
-    void DisplayTimer()
+    public void DisplayTimer()
     {
         // If the timer is not already displayed (this defaults to false)
         if(_isTimerDisplayed == false)

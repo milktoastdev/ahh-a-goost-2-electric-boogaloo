@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_text: PRESS ESC TO RETURN TO TITLE SCREEN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -632,7 +632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &123393223
 Transform:
   m_ObjectHideFlags: 0
@@ -849,6 +849,17 @@ MonoBehaviour:
   _gameManager: {fileID: 1644803872}
   _uiManager: {fileID: 1287574126}
   _cameraManager: {fileID: 1609830293}
+  _minigameManagers:
+  - {fileID: 2129448580}
+  - {fileID: 2048469769}
+  - {fileID: 1477365086}
+  - {fileID: 1074705205}
+  - {fileID: 123393222}
+  - {fileID: 1945931552}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _minigamePlaying: 0
   _currentMinigame: 0
   _isMinigameRunning: 0
   _minigamesList:
@@ -938,7 +949,7 @@ MonoBehaviour:
     design : ana nguyen (nymrahne)\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3378,7 +3389,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3434,7 +3445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1074705206
 Transform:
   m_ObjectHideFlags: 0
@@ -4132,6 +4143,7 @@ MonoBehaviour:
   _gameManager: {fileID: 1644803872}
   _minigameManager: {fileID: 272787690}
   _cameraManager: {fileID: 1609830293}
+  _titleScreen: {fileID: 753467727}
   _quitButton: {fileID: 0}
   _returnButton: {fileID: 0}
   _continueButton: {fileID: 0}
@@ -4665,7 +4677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1477365087
 Transform:
   m_ObjectHideFlags: 0
@@ -5168,6 +5180,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 1644803872}
   _minigameManager: {fileID: 272787690}
+  _minigamePositionsX:
+  - -119.9
+  - -127.4
+  _minigamePositionsY:
+  - 90.4
+  - 58.6
+  _minigamePositionsZ:
+  - -12.5
+  - -8.4
 --- !u!4 &1609830295
 Transform:
   m_ObjectHideFlags: 0
@@ -5177,7 +5198,7 @@ Transform:
   m_GameObject: {fileID: 1609830293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 608.9979, y: 125.04864, z: -381.76642}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5596,7 +5617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1945931553
 Transform:
   m_ObjectHideFlags: 0
@@ -5916,7 +5937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2048469770
 Transform:
   m_ObjectHideFlags: 0
@@ -6091,7 +6112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2129448581
 Transform:
   m_ObjectHideFlags: 0

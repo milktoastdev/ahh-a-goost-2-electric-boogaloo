@@ -7,6 +7,8 @@ public class Script_GameManager : MonoBehaviour
     public GameObject _minigameManager;
     public GameObject _uiManager;
 
+   
+
     int _startingLives = 3;
     public int _remainingLives;
 
@@ -23,6 +25,7 @@ public class Script_GameManager : MonoBehaviour
         // Debug.Log("Start Game function called...");
         _minigameManager.GetComponent<Script_MinigameManager>().NextMinigame();
         // Debug.Log("Start Game function executed successfully");
+       
     }
 
     // Closes built out application
