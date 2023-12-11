@@ -33,7 +33,7 @@ public class Script_Ariana_Capture : MonoBehaviour
         Debug.Log("Timer is reset.");
 
         // Running the minigame manager from the backend so it can do its fancy shiz
-        Debug.Log("Running minigame...")
+        Debug.Log("Running minigame...");
         _minigameManager.GetComponent<Script_MinigameManager>()._isMinigameRunning = true;
         Debug.Log("Minigame is running.");
 
